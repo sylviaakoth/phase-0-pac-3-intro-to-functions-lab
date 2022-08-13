@@ -1,4 +1,3 @@
-
 function shout(string) {
     return string.toUpperCase();
     }
@@ -14,19 +13,23 @@ function shout(string) {
   function logWhisper(string) {
     console.log(string.toLowerCase());
   }
-  function sayHiToHeadphonedRoommate(string) {
-    if(string === string.toLowerCase()) {
-      return "I can't hear you!"
-    } else if(string === string.toUpperCase()) {
-      return "YES INDEED!"
-    } else if(string === "Let's have dinner together!") {
-      return "I would love to!"
+  function sayHiToHeadphoneRoomate(string) {
+    const firstAns = "I can't hear you!";
+    const secondAns = "Yes INDEED!";
+    const thirdAns = "I would love to!";
+    const fourthAns = "Let's have dinner together!";
+
+    if (string === string.toLowerCase()) {
+        return firstAns;
     }
+    else if (string === string.toUpperCase()) {
+         return secondAns;
+    }
+
+
+    else if (string === fourthAns) {
+      return thirdAns
+    }
+         
+
   }
-  shout("hello");
-  whisper("Hello");
-  logShout("sTRing");
-  logWhisper("sTRing");
-  sayHiToHeadphonedRoommate("sTRing");
-  sayHiToHeadphonedRoommate("sTRing");
-  sayHiToHeadphonedRoommate("sTRing");
